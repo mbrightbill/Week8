@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  GoSeahawksViewController.h
 //  Week8
 //
 //  Created by Matthew Brightbill on 11/24/14.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
-
+@interface GoSeahawksViewController : UIViewController
 
 @end
-

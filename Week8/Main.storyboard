@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e8e-aS-ify">
+                                <rect key="frame" x="16" y="28" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="Eu7-vs-UBC"/>
+                                    <constraint firstAttribute="height" constant="40" id="S1n-Rz-7da"/>
+                                </constraints>
+                                <state key="normal" image="menu36.png">
+                                    <color key="titleColor" red="0.09803922474" green="0.5176470876" blue="0.9450981021" alpha="1" colorSpace="deviceRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="didPressBurger:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lZZ-IX-fbR"/>
+                                </connections>
+                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="nr1-4E-ii7">
+                                <rect key="frame" x="0.0" y="79" width="426" height="521"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CELL" id="QCh-n7-wKd">
+                                        <rect key="frame" x="0.0" y="0.0" width="319" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="QCh-n7-wKd" id="WY8-zz-Ki4">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    </tableViewCell>
+                                </prototypes>
+                                <sections/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="nr1-4E-ii7" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="BZ8-0i-IWK"/>
+                            <constraint firstItem="e8e-aS-ify" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Ldf-Lt-LOs"/>
+                            <constraint firstItem="e8e-aS-ify" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="grd-oj-636"/>
+                            <constraint firstAttribute="trailing" secondItem="nr1-4E-ii7" secondAttribute="trailing" constant="174" id="nXS-ca-Cdf"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="nr1-4E-ii7" secondAttribute="bottom" id="w5x-kD-Zln"/>
+                            <constraint firstItem="nr1-4E-ii7" firstAttribute="top" secondItem="e8e-aS-ify" secondAttribute="bottom" constant="11" id="won-AW-gyd"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="burgerButton" destination="e8e-aS-ify" id="3m7-RV-gJ3"/>
+                        <outlet property="tableView" destination="nr1-4E-ii7" id="BQf-hU-00e"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+        <!--Go Seahawks View Controller-->
+        <scene sceneID="92P-xg-MvF">
+            <objects>
+                <viewController storyboardIdentifier="GOSEAHAWKS_VC" id="jLB-WW-p3k" customClass="GoSeahawksViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="bUs-0A-lFJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="Hyw-JX-fJi"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="2nM-sj-OWf">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Go Seahawks!!!!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KMC-m8-qhh">
+                                <rect key="frame" x="176" y="268" width="248" height="64"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="40"/>
+                                <color key="textColor" red="0.81730916539999998" green="1" blue="0.97314690260000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.1019607843" green="0.3294117647" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="KMC-m8-qhh" secondAttribute="centerX" id="Q5j-Qg-5WN"/>
+                            <constraint firstAttribute="centerY" secondItem="KMC-m8-qhh" secondAttribute="centerY" id="mJ2-rd-2of"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zo1-ke-rnj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="338" y="-434"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="iIL-LV-c1d">
+            <objects>
+                <viewController storyboardIdentifier="BLUE_VC" id="f6T-30-XTC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Q1w-4Y-nxR"/>
+                        <viewControllerLayoutGuide type="bottom" id="X7u-mV-SOl"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="VRF-kV-B8M">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.81730916539999998" green="1" blue="0.97314690260000003" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Hva-RL-sYU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1077" y="317"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="menu36.png" width="64" height="64"/>
+    </resources>
+</document>
