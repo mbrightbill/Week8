@@ -58,8 +58,8 @@
             } else {
                 self.blueVC.view.frame = CGRectMake(self.view.frame.size.width * 0.6, 0, self.view.frame.size.width, self.view.frame.size.height);
                 self.burgerMenuIsOpen = YES;
-                self.blueVC.view.layer.borderWidth = 1.0f;
-                self.blueVC.view.layer.borderColor = [UIColor blueColor].CGColor;
+                self.blueVC.view.layer.borderWidth = 5.0f;
+                self.blueVC.view.layer.borderColor = [UIColor grayColor].CGColor;
             }
         } else {
             if (self.goSeahawksIsOpen == YES) {
