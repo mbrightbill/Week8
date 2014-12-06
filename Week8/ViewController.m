@@ -27,7 +27,6 @@
     [super viewDidLoad];
     
     self.blueVC = [[self.storyboard instantiateViewControllerWithIdentifier:@"BLUE_VC"] autorelease];
-    //self.goSeahawksVC = [[self.storyboard instantiateViewControllerWithIdentifier:@"GOSEAHAWKS_VC"] autorelease];
     
     [self addChildViewController:self.blueVC];
     self.blueVC.view.frame = self.view.frame;
